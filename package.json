@@ -1,0 +1,19 @@
+{
+  "name": "frontendengineering",
+  "version": "1.0.0",
+  "description": "play",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mingjourney/FrontendEngineering.git"
+  },
+  "author": "Gavin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mingjourney/FrontendEngineering/issues"
+  },
+  "homepage": "https://github.com/mingjourney/FrontendEngineering#readme"
+}
