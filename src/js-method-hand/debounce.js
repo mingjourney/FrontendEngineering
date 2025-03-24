@@ -3,7 +3,6 @@ const debounce = (fn, delay) => {
   return function (...args) {
     if (timer) {
       clearTimeout(timer);
-      console.log('timer1', timer);
     }
     timer = setTimeout(() => {
       fn.apply(this, args)

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Dice</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .dice {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+        }
+
+        .pip {
+            width: 20px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 50%;
+        }
+
+        /* 筛子 1 点样式 */
+        .dice-1 {
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 筛子 2 点样式 */
+        .dice-2 {
+            justify-content: space-between;
+        }
+
+        .dice-2 .pip:last-child {
+            align-self: flex-end;
+        }
+
+        /* 筛子 3 点样式 */
+        .dice-3 {
+            justify-content: space-between;
+        }
+
+        .dice-3 .pip:nth-child(2) {
+            align-self: center;
+        }
+
+        .dice-3 .pip:nth-child(3) {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 筛子 1 点 -->
+    <div class="dice dice-1">
+        <span class="pip"></span>
+    </div>
+    <!-- 筛子 2 点 -->
+    <div class="dice dice-2">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+    <!-- 筛子 3 点 -->
+    <div class="dice dice-3">
+        <span class="pip"></span>
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+</body>
+
+</html>    
